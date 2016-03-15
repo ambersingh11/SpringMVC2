@@ -10,7 +10,7 @@
 </head>
 <body>
 	<c:forEach items="${dataList}" var="req">
-		<spring:url value="/findRequest/${req.name}" var="url" htmlEscape="true"></spring:url>
+		<spring:url value="/findRequest/${req.name}/${req.mobileNumber}" var="url" htmlEscape="true"></spring:url>
 		<a href="${url}">${req.name} </a>
 		<c:out value="${req.mobileNumber}"></c:out>
 		<br>
